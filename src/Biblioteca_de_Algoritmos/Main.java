@@ -1,7 +1,0 @@
-package Biblioteca_de_Algoritmos;
-
-public class Main {
-    public static void main(String[]args) {
-        System.out.println("cagado");
-    }
-}
