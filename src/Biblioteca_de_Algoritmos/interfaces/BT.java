@@ -1,8 +1,8 @@
 package Biblioteca_de_Algoritmos.interfaces;
 
-/**
- * Interface para Árvore Binária de Busca (Parte 5 do projeto).
- */
+//
+//Interface para Árvore Binária de Busca (Parte 5 do projeto).
+
 public interface BT<T> {
     public BTNode<T> getRoot();
     public boolean isEmpty();

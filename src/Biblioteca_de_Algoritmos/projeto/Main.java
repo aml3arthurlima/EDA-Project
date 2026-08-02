@@ -2,9 +2,9 @@ package Biblioteca_de_Algoritmos.projeto;
 
 import java.util.Scanner;
 
-/**
-Menu com opções:
- */
+
+//Menu com opções:
+
 public class Main {
 
     public static void main(String[] args) {

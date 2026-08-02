@@ -5,10 +5,10 @@ import Biblioteca_de_Algoritmos.interfaces.BTNode;
 
 import java.util.ArrayList;
 
-/**
- * Parte 5 - Árvore Binária de Busca (BST) genérica.
- * Serve também de classe-base para a AVL (Parte 6).
- */
+
+//Árvore Binária de Busca
+//Serve também de base para a AVL.
+
 public class BST<T extends Comparable<T>> implements BT<T> {
 
     protected BTNode<T> root;
@@ -127,6 +127,13 @@ public class BST<T extends Comparable<T>> implements BT<T> {
         return node;
     }
 
+    protected BTNode<T> maxNode(BTNode<T> node) {
+        while (node.getRight() != null) {
+            node = node.getRight();
+        }
+        return node;
+    }
+
     protected BTNode<T> removeMin(BTNode<T> node) {
         if (node.getLeft() == null) {
             return node.getRight();
@@ -170,15 +177,15 @@ public class BST<T extends Comparable<T>> implements BT<T> {
         return converterParaArray(lista);
     }
 
-    /**
-     * Converte a ArrayList<T> interna para um vetor T[] de verdade.
-     * Não é possível simplesmente fazer "(T[]) lista.toArray()" aqui porque,
-     * como T é limitado por Comparable<T>, essa expressão seria compilada
-     * como um cast para Comparable[], e o objeto devolvido por
-     * ArrayList.toArray() é sempre um Object[] puro — o que causaria
-     * ClassCastException em tempo de execução. Por isso usar reflection
-     * para criar um vetor com o tipo de tempo de execução correto.
-     */
+
+     // Converte a ArrayList<T> interna para um vetor T[] de verdade.
+     //Não é possível simplesmente fazer "(T[]) lista.toArray()" aqui porque,
+     //como T é limitado por Comparable<T>, essa expressão seria compilada
+     //como um cast para Comparable[], e o objeto devolvido por
+     //ArrayList.toArray() é sempre um Object[] puro — o que causaria
+     //ClassCastException em tempo de execução. Por isso usar reflection
+     //para criar um vetor com o tipo de tempo de execução correto.
+
     @SuppressWarnings("unchecked")
     private T[] converterParaArray(ArrayList<T> lista) {
         if (lista.isEmpty()) {

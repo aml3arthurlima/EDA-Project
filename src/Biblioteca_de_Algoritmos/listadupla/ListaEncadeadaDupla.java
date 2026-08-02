@@ -6,21 +6,11 @@ import Biblioteca_de_Algoritmos.interfaces.DoubleLinkedList;
 
 import java.util.ArrayList;
 
-
-
-/**
-
- * Lista Encadeada dupla.
-
- * Implementação propria(sem usar java.util.LinkedList).
-
- */
+//Lista Encadeada dupla.
 
 public class ListaEncadeadaDupla<T> implements DoubleLinkedList<T> {
 
-
-
-    /** Nó interno da lista dupla. */
+    // Nó interno da lista dupla.
 
     private static class Node<T> {
 
@@ -110,7 +100,7 @@ public class ListaEncadeadaDupla<T> implements DoubleLinkedList<T> {
 
 
 
-    /** Insere o elemento no final da lista. */
+//Insere o elemento no final da lista
 
     @Override
 
