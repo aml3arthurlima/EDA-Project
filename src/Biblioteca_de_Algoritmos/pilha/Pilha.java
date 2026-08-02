@@ -1,4 +1,4 @@
-package Biblioteca_de_Algoritmos.Pilha;
+package Biblioteca_de_Algoritmos.pilha;
 
 public class Pilha<T> {
 
