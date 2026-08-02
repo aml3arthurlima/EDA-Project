@@ -126,7 +126,6 @@ public class BST<T extends Comparable<T>> implements BT<T> {
         }
         return node;
     }
-
     protected BTNode<T> maxNode(BTNode<T> node) {
         while (node.getRight() != null) {
             node = node.getRight();
@@ -178,13 +177,13 @@ public class BST<T extends Comparable<T>> implements BT<T> {
     }
 
 
-     // Converte a ArrayList<T> interna para um vetor T[] de verdade.
-     //Não é possível simplesmente fazer "(T[]) lista.toArray()" aqui porque,
-     //como T é limitado por Comparable<T>, essa expressão seria compilada
-     //como um cast para Comparable[], e o objeto devolvido por
-     //ArrayList.toArray() é sempre um Object[] puro — o que causaria
-     //ClassCastException em tempo de execução. Por isso usar reflection
-     //para criar um vetor com o tipo de tempo de execução correto.
+    // Converte a ArrayList<T> interna para um vetor T[] de verdade.
+    //Não é possível simplesmente fazer "(T[]) lista.toArray()" aqui porque,
+    //como T é limitado por Comparable<T>, essa expressão seria compilada
+    //como um cast para Comparable[], e o objeto devolvido por
+    //ArrayList.toArray() é sempre um Object[] puro — o que causaria
+    //ClassCastException em tempo de execução. Por isso usar reflection
+    //para criar um vetor com o tipo de tempo de execução correto.
 
     @SuppressWarnings("unchecked")
     private T[] converterParaArray(ArrayList<T> lista) {
