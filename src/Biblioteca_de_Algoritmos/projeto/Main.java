@@ -1,5 +1,8 @@
 package Biblioteca_de_Algoritmos.projeto;
 
+import Biblioteca_de_Algoritmos.arvoreBST.MenuBST;
+import Biblioteca_de_Algoritmos.listadupla.MenuListaDupla;
+
 import java.util.Scanner;
 
 

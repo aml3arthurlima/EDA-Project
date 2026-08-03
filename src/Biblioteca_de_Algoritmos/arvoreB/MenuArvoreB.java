@@ -1,6 +1,6 @@
-package Biblioteca_de_Algoritmos.projeto;
+package Biblioteca_de_Algoritmos.arvoreB;
 
-import Biblioteca_de_Algoritmos.arvoreB.ArvoreB;
+import Biblioteca_de_Algoritmos.projeto.ConsoleUtil;
 
 import java.util.Scanner;
 

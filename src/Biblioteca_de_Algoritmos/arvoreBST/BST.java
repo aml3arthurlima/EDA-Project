@@ -1,7 +1,6 @@
 package Biblioteca_de_Algoritmos.arvoreBST;
 
 import Biblioteca_de_Algoritmos.interfaces.BT;
-import Biblioteca_de_Algoritmos.interfaces.BTNode;
 
 import java.util.ArrayList;
 

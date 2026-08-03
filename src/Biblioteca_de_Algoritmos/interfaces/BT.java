@@ -1,5 +1,7 @@
 package Biblioteca_de_Algoritmos.interfaces;
 
+import Biblioteca_de_Algoritmos.arvoreBST.BTNode;
+
 // Interface que define as operações básicas
 // de uma Árvore Binária.
 public interface BT<T> {

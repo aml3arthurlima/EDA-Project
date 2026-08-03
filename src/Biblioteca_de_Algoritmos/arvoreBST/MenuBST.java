@@ -1,7 +1,6 @@
-package Biblioteca_de_Algoritmos.projeto;
+package Biblioteca_de_Algoritmos.arvoreBST;
 
-import Biblioteca_de_Algoritmos.arvoreBST.BST;
-import Biblioteca_de_Algoritmos.interfaces.BTNode;
+import Biblioteca_de_Algoritmos.projeto.ConsoleUtil;
 
 import java.util.Scanner;
 

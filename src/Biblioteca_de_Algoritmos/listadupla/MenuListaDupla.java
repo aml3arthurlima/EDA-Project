@@ -1,6 +1,6 @@
-package Biblioteca_de_Algoritmos.projeto;
+package Biblioteca_de_Algoritmos.listadupla;
 
-import Biblioteca_de_Algoritmos.listadupla.ListaEncadeadaDupla;
+import Biblioteca_de_Algoritmos.projeto.ConsoleUtil;
 
 import java.util.Scanner;
 

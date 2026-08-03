@@ -1,4 +1,4 @@
-package Biblioteca_de_Algoritmos.interfaces;
+package Biblioteca_de_Algoritmos.arvoreBST;
 
 // Classe que representa um nó da
 // Árvore Binária de Busca (BST)
