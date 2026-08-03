@@ -32,7 +32,6 @@ public class MenuPrincipal {
         menuListaDupla = new MenuListaDupla(scanner);
         menuBST = new MenuBST(scanner);
         menuAVL = new MenuAVL(scanner);
-        menuArvoreB = new MenuArvoreB(scanner);
     }
 
     //Inicia o menu principal da aplicação.
@@ -73,6 +72,7 @@ public class MenuPrincipal {
                     break;
 
                 case 7:
+                    menuArvoreB = new MenuArvoreB(scanner);
                     menuArvoreB.abrir();
                     break;
 
