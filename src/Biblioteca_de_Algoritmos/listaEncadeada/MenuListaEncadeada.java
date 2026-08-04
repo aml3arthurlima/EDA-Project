@@ -127,8 +127,8 @@ public class MenuListaEncadeada {
 
         System.out.print("Lista: ");
         //Percorre o vetor e imprime cada elemento
-        for (Integer elemento: elementos) {
-            System.out.println(elemento + " ");
+        for (Integer elemento : elementos) {
+            System.out.print(elemento + " ");
         }
         System.out.println();
     }

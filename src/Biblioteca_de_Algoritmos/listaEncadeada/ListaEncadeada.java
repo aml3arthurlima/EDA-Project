@@ -87,19 +87,39 @@ public class ListaEncadeada<T> implements LinkedList<T>{
 
 
     @Override
-    @SuppressWarnings("unchecked") //Oculta o aviso do cast para vetor genérico
+    @SuppressWarnings("unchecked")
     public T[] toArray() {
 
-        T[] vetor = (T[]) new Object[tamanho];
-        No<T> atual = head;
-        int i = 0;
+        // Cria uma lista temporária para armazenar os elementos.
+        java.util.ArrayList<T> lista = new java.util.ArrayList<>();
 
-        //Copia todos os elementos da lista para o vetor
+        // Começa pelo primeiro nó.
+        No<T> atual = head;
+
+        // Percorre toda a lista.
         while (atual != null) {
-            vetor[i] = atual.dado;
+            lista.add(atual.dado);
             atual = atual.proximo;
-            i++;
         }
+
+        // Se a lista estiver vazia,
+        // retorna um vetor vazio.
+        if (lista.isEmpty()) {
+            return (T[]) new Comparable[0];
+        }
+
+        // Cria um vetor do tipo correto
+        // usando reflection.
+        T[] vetor = (T[]) java.lang.reflect.Array.newInstance(
+                lista.get(0).getClass(),
+                lista.size()
+        );
+
+        // Copia os elementos.
+        for (int i = 0; i < lista.size(); i++) {
+            vetor[i] = lista.get(i);
+        }
+
         return vetor;
     }
 }
